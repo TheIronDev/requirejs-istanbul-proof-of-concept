@@ -24,6 +24,7 @@
   "devDependencies": {
     "mocha": "~1.21.4",
     "grunt": "~0.4.5",
-    "requirejs": "~2.1.15"
+    "requirejs": "~2.1.15",
+    "istanbul": "~0.3.2"
   }
 }
