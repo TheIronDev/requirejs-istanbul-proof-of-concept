@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/TheIronDeveloper/requirejs-codecoverage-tests/issues"
   },
-  "homepage": "https://github.com/TheIronDeveloper/requirejs-codecoverage-tests"
+  "homepage": "https://github.com/TheIronDeveloper/requirejs-codecoverage-tests",
+  "devDependencies": {
+    "mocha": "~1.21.4",
+    "grunt": "~0.4.5"
+  }
 }
