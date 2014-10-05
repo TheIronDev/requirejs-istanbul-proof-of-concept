@@ -1,0 +1,24 @@
+{
+  "name": "requirejs-codecoverage-tests",
+  "version": "0.0.0",
+  "description": "Making a very basic app to test how to get istanbul codecoverage on amd files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:TheIronDeveloper/requirejs-codecoverage-tests.git"
+  },
+  "keywords": [
+    "requirejs",
+    "mocha",
+    "istanbul"
+  ],
+  "author": "Tyler Stark <TheIronDeveloper@gmail.com> (http://www.theirondeveloper.com/)",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/TheIronDeveloper/requirejs-codecoverage-tests/issues"
+  },
+  "homepage": "https://github.com/TheIronDeveloper/requirejs-codecoverage-tests"
+}
