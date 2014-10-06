@@ -1,6 +1,4 @@
-var requirejs = require('requirejs'),
-	path = __filename,
-	CacheWrapper = require("../scripts/cacheWrapper"),
+var CacheWrapper = require("../scripts/cacheWrapper"),
 	assert = require('assert'),
 	cacheWrapper;
 

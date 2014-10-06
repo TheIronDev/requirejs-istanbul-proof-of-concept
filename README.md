@@ -28,4 +28,3 @@ istanbul cover _mocha -- -R Spec;open coverage/lcov-report/index.html
 
 **Whats left:**
 [ ] Provide 0% for all untested files
-[ ] Include a file that requires other modules in the define block.

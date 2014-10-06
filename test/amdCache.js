@@ -1,6 +1,4 @@
-var requirejs = require('requirejs'),
-	path = __filename,
-	BasicCache = require("../scripts/amdCache"),
+var BasicCache = require("../scripts/amdCache"),
 	assert = require('assert'),
 	cache;
 
