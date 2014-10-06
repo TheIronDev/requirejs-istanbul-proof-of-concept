@@ -26,5 +26,5 @@ istanbul cover _mocha -- -R Spec;open coverage/lcov-report/index.html
 * `if (typeof define !== 'function') { var define = require('amdefine')(module) }` must be added on the very top of amd files.
 * Out of the box, untested files are not included.
 
-**Whats left:**
-[ ] Provide 0% for all untested files
+## Getting 0% for untested files
+* I used `require('dive')` to traverse down the scripts directory and require in all files, even those without tests

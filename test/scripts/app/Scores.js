@@ -2,9 +2,7 @@ var Scores = require("../../../scripts/app/Scores"),
 	assert = require('assert'),
 	scores;
 
-console.log(Scores);
-
-describe ('Scores ', function() {
+describe ('Scores (testing 3 directory levels deep)', function() {
 	beforeEach(function() {
 		scores = new Scores();
 	});

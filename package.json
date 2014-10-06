@@ -26,6 +26,7 @@
     "grunt": "~0.4.5",
     "requirejs": "~2.1.15",
     "istanbul": "~0.3.2",
-    "amdefine": "~0.1.0"
+    "amdefine": "~0.1.0",
+    "dive": "~0.3.1"
   }
 }
