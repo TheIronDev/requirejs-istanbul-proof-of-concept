@@ -21,3 +21,11 @@ mocha --reporter Spec
 ```
 istanbul cover _mocha -- -R Spec;open coverage/lcov-report/index.html
 ```
+
+**Few requirements found:**
+* `if (typeof define !== 'function') { var define = require('amdefine')(module) }` must be added on the very top of amd files.
+* Out of the box, untested files are not included.
+
+**Whats left:**
+[ ] Provide 0% for all untested files
+[ ] Include a file that requires other modules in the define block.

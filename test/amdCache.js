@@ -1,6 +1,6 @@
 var requirejs = require('requirejs'),
 	path = __filename,
-	BasicCache = requirejs(path.replace('test/', 'scripts/')),
+	BasicCache = require("../scripts/amdCache"),
 	assert = require('assert'),
 	cache;
 

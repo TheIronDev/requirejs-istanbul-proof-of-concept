@@ -1,6 +1,6 @@
 if (typeof define !== 'function') { var define = require('amdefine')(module) }
 
-// Same thing as basicCache, but this time wrapped behind a define()
+// Same thing as amdCache, but this one isn't being called
 define([], function() {
 
 	var BasicCache = function () {
