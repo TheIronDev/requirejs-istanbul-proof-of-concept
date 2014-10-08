@@ -27,6 +27,12 @@
     "requirejs": "~2.1.15",
     "istanbul": "~0.3.2",
     "amdefine": "~0.1.0",
-    "dive": "~0.3.1"
+    "dive": "~0.3.1",
+    "blanket": "~1.1.6"
+  },
+  "config": {
+    "blanket": {
+	  "pattern": "scripts"
+	}
   }
 }

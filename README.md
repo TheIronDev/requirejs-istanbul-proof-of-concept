@@ -16,10 +16,13 @@ npm install
 mocha --reporter Spec
 ```
 
-## Check Coverage
+## Check Coverage with Blanket.js
 
 ```
-istanbul cover _mocha -- -R Spec;open coverage/lcov-report/index.html
+#html
+mocha --require blanket -R html-cov > coverage.html; open coverage.html
+#json
+mocha --require blanket -R json-cov > coverage.json; open coverage.json
 ```
 
 **Few requirements found:**
