@@ -1,6 +1,15 @@
-var Scores = require("../../../scripts/app/Scores"),
+var fs = require('fs'),
 	assert = require('assert'),
-	scores;
+	amdefine = require('amdefine'),
+	cache;
+
+require.extensions['.js'] = function(localModule, filename) {
+	var contents = fs.readFileSync(filename, 'utf8');
+	contents = 'if (typeof define !== "function") { var define = require("amdefine")(module); } ' + contents;
+	localModule._compile(contents, filename);
+};
+
+var Scores = require("../../../scripts/app/Scores");
 
 describe ('Scores (testing 3 directory levels deep)', function() {
 	beforeEach(function() {

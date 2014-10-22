@@ -1,4 +1,4 @@
-if (typeof define !== 'function') { var define = require('amdefine')(module) }
+
 
 // Same thing as amdCache, but this one isn't being called
 define([], function() {

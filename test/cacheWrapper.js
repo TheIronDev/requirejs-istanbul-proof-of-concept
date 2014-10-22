@@ -1,6 +1,15 @@
-var CacheWrapper = require("../scripts/cacheWrapper"),
+var fs = require('fs'),
 	assert = require('assert'),
+	amdefine = require('amdefine'),
 	cacheWrapper;
+
+require.extensions['.js'] = function(localModule, filename) {
+	var contents = fs.readFileSync(filename, 'utf8');
+	contents = 'if (typeof define !== "function") { var define = require("amdefine")(module); } ' + contents;
+	localModule._compile(contents, filename);
+};
+
+var CacheWrapper = require("../scripts/cacheWrapper");
 
 describe ('Cache Wrapper (amd, requiring another amd) ', function() {
 	beforeEach(function() {

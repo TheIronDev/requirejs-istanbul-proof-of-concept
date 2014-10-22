@@ -1,5 +1,3 @@
-if (typeof define !== 'function') { var define = require('amdefine')(module) }
-
 // Same thing as basicCache, but this time wrapped behind a define()
 define([], function() {
 

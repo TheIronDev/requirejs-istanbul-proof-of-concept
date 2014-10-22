@@ -1,6 +1,15 @@
-var BasicCache = require("../scripts/amdCache"),
+var fs = require('fs'),
 	assert = require('assert'),
+	amdefine = require('amdefine'),
 	cache;
+
+require.extensions['.js'] = function(localModule, filename) {
+	var contents = fs.readFileSync(filename, 'utf8');
+	contents = 'if (typeof define !== "function") { var define = require("amdefine")(module); } ' + contents;
+	localModule._compile(contents, filename);
+};
+
+var BasicCache = require("../scripts/amdCache");
 
 describe ('Basic Cache (amd) ', function() {
 	beforeEach(function() {
