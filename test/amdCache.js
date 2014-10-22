@@ -1,3 +1,5 @@
+require('amdefine/intercept'); // This should be included in every file... I only did this once since its the first to get run.
+
 var BasicCache = require("../scripts/amdCache"),
 	assert = require('assert'),
 	cache;

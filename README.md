@@ -16,18 +16,7 @@ npm install
 mocha --reporter Spec
 ```
 
-## Check Coverage with Blanket.js
-
-```
-#html
-mocha --require blanket -R html-cov > coverage.html; open coverage.html
-#json
-mocha --require blanket -R json-cov > coverage.json; open coverage.json
-```
-
-**Few requirements found:**
-* `if (typeof define !== 'function') { var define = require('amdefine')(module) }` must be added on the very top of amd files.
+**Notes:**
+* Code coverage does not appear to work with istanbul or blanketjs.
 * Out of the box, untested files are not included.
 
-## Getting 0% for untested files
-* I used `require('dive')` to traverse down the scripts directory and require in all files, even those without tests

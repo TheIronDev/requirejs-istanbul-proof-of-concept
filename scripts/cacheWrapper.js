@@ -1,4 +1,4 @@
-if (typeof define !== 'function') { var define = require('amdefine')(module) }
+
 
 // RequireJs File that requires in another amd file
 define(['../scripts/amdCache'], function(Cache) {
