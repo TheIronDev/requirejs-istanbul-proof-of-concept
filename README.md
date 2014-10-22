@@ -1,4 +1,4 @@
-# Testing FTW
+# Node-Define Example
 
 The purpose behind this repo is to find out how to get istanbul code coverage on requirejs files.
 
@@ -13,18 +13,14 @@ npm install
 ## Run Tests
 
 ```
-mocha --reporter Spec
+mocha -r node-define --reporter Spec
 ```
 
-## Check Coverage
+## Check Coverage (does not work on clientside files :( )
 
 ```
-istanbul cover _mocha -- -R Spec;open coverage/lcov-report/index.html
+istanbul cover _mocha -- -r node-define  -R Spec;open coverage/lcov-report/index.html
 ```
 
-**Few requirements found:**
-* `if (typeof define !== 'function') { var define = require('amdefine')(module) }` must be added on the very top of amd files.
-* Out of the box, untested files are not included.
-
-## Getting 0% for untested files
-* I used `require('dive')` to traverse down the scripts directory and require in all files, even those without tests
+**Few Notes:**
+* Does not work on clientside files :(

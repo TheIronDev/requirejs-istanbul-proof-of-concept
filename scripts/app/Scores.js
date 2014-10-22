@@ -1,4 +1,3 @@
-if (typeof define !== 'function') { var define = require('amdefine')(module) }
 
 // AMD File that is 2 levels deep
 define([], function() {
