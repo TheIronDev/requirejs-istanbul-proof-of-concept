@@ -1,6 +1,15 @@
-var BasicCache = require("../scripts/amdCache"),
+var requirejs = require('requirejs');
+
+requirejs.config({
+	"baseUrl": "./scripts/",
+	"useStrict": true
+});
+
+var	BasicCache = requirejs("../scripts/amdCache"),
 	assert = require('assert'),
 	cache;
+
+
 
 describe ('Basic Cache (amd) ', function() {
 	beforeEach(function() {

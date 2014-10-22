@@ -1,4 +1,12 @@
-var CacheWrapper = require("../scripts/cacheWrapper"),
+var requirejs = require('requirejs');
+
+requirejs.config({
+	"baseUrl": "./scripts/",
+	"useStrict": true
+});
+
+
+var CacheWrapper = requirejs("cacheWrapper"),
 	assert = require('assert'),
 	cacheWrapper;
 

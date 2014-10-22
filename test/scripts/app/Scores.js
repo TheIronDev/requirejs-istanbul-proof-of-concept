@@ -1,4 +1,12 @@
-var Scores = require("../../../scripts/app/Scores"),
+var requirejs = require('requirejs');
+
+requirejs.config({
+	"baseUrl": "./scripts/",
+	"useStrict": true
+});
+
+
+var Scores = requirejs("app/Scores"),
 	assert = require('assert'),
 	scores;
 
